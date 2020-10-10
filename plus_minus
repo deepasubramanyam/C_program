@@ -1,0 +1,41 @@
+/* plus minus in hackerrank solution*/
+#include <assert.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    int i,n,a[100];
+    float cp=0,cn=0,cz=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        if(a[i]<0)
+        {
+            cn++;
+        }
+        if(a[i]==0)
+        {
+            cz++;
+        }
+        if(a[i]>0)
+        {
+            cp++;
+        }
+    }
+    printf("%.6f\n",cp/n);
+    printf("%.6f\n",cn/n);
+    printf("%.6f\n",cz/n);
+    return 0;
+}
+    
