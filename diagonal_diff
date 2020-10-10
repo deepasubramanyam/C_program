@@ -1,0 +1,39 @@
+/* diagonal difference in square matrix*/
+#include <assert.h>
+#include <ctype.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main()
+{
+    int i,j,a[100][100],sum=0,sum1=0,n;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            if(i==j)
+            {
+                sum+=a[i][j];
+            }
+            if(i+j==(n-1))
+            {
+                sum1+=a[i][j];
+            }
+        }
+    }
+    printf("%d",abs(sum-sum1));
+
+}
