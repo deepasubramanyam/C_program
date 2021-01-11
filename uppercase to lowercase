@@ -1,0 +1,16 @@
+#program to convert string from lowercase to upppercase strings
+#include<stdio.h>
+void main()
+{
+  char str1[100];
+  int i;
+  scanf("%s",&str1);
+  for(i=0;str1[i]!='\0';i++)
+  {
+    if(str1[i]>='a' && str1[i]<='z')
+    {
+      str1[i]=str1[i]-32;
+    }
+   }
+   printf("%s",str1);
+  }
