@@ -1,0 +1,35 @@
+#include<stdio.h>
+int gcd(int a,int b)
+{
+    if (a==b)
+    {
+        return a;
+    }
+    if(a==0)
+        return b;
+    if(b==0)
+        return a;
+    if(a>b)
+        return gcd(a-b,b);
+    else
+        return gcd(a,b-a);
+}
+
+void main() 
+{
+     int num1,num2, i=1,result,result1,gcd_ans;
+     scanf("%d %d", &num1,&num2);
+     result=num1>num2?num2:num1;
+     for(i=1;i<=result;i++)
+     {
+         if(num1%i==0 && num2%i==0)
+         {
+             gcd_ans=i;
+         }
+     }
+     printf("%d",gcd_ans);
+     printf("\n");
+     result1=gcd(num1,num2);
+     printf("%d",result1);
+     
+} 
