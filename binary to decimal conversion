@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main() 
+{
+     int num,sum=0,temp,base=1,rem;
+     scanf("%d",&num);
+     temp=num;
+     while(temp>0)
+     {
+         rem=temp%10;
+         sum=sum+(rem*base);
+         base=base*2;
+         temp/=10;
+     }
+     printf("%d",sum);
+     
+} 
+
