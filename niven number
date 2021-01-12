@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main() 
+{
+     int num1,sum=0,temp,rem;
+     scanf("%d", &num1);
+     temp=num1;
+     while(temp > 0){    
+        rem = num1%10;    
+        sum += rem;    
+        temp = temp/10;    
+    }    
+     if(num1%sum==0)
+        printf("niven number");
+     else
+        printf("not niven number");
+} 
+
