@@ -1,0 +1,16 @@
+#include<stdio.h>
+int factorial(int n);
+void main() 
+{
+     int num, i, j, flag=0, result;
+     scanf("%d", &num) ;
+     result=factorial(num);
+     printf("%d",result);
+}
+int factorial(int n){
+     if(n==0|| n==1) 
+        return 1;
+     else 
+        return n*factorial(n-1) ;
+ }
+ 
