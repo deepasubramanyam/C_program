@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main() 
+{
+     int num,temp;
+     scanf("%d",&num);
+     temp=num;
+     while(temp>=10)
+     {
+         temp/=10;
+     }
+     printf("the first digit and last digit is:%d %d",temp,num%10);
+     
+} 
+
