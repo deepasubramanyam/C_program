@@ -24,7 +24,8 @@ int main() {
            temp=i-1;
        }
    }
-   for(i=0;i<strlen(str1);i++)
+   str2[i]='\0';
+   for(i=0;str2[i]!='\0';i++)
    {
        printf("%c",str2[i]);
    }
